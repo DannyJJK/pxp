@@ -3,10 +3,13 @@ use std::fmt::{Display, Formatter};
 mod generated;
 
 pub use generated::*;
+pub use node::Node;
+
 use pxp_span::Span;
 use pxp_syntax::comments::CommentGroup;
 use pxp_token::{Token, TokenKind};
 
+pub mod node;
 pub mod data_type;
 pub mod identifiers;
 pub mod literals;
